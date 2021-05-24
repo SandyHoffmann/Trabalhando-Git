@@ -7,6 +7,11 @@
 </head>
 <body>
     <script>
+        // mostraMedia(media) -> Mostrar a média (com arredondamento de duas casas decimais) em um alert.
+        function mostraMedia(media) {
+            alert(media.toFixed(2))
+        }
+      
         function calculaMedia(notas){
             let media = 0
             for (let i = 0; i < notas.length; i++){
@@ -14,8 +19,7 @@
             }
             return (media / notas.length)
         }
-
-        
+      
         function cadastrarNotas (){
             var nota1 = +prompt("Digite sua primeira nota")
             var nota2 = +prompt("Digite sua segunda nota")
